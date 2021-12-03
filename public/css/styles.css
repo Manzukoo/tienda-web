@@ -5,3 +5,53 @@ body {
     padding: 0;
     margin: 0;
 }
+
+/*
+START HEADER
+*/
+
+.nav-title {
+    margin: 0 0 8px 8px;
+    padding-top: 8px;
+    float: left;
+}
+
+
+.nav-searchProducts{
+    width: 100%;
+    text-align-last: center;
+    position: relative;
+}
+
+
+.nav-searchProducts-input{
+    width: 70%;
+    height: 50px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    color: #63717f;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+.nav-searchProducts-btn{
+    position: absolute;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    color: #4f5b66;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #464b55;
+    padding: 10px;
+    display: flex;
+}
+
+/*
+END HEADER
+*/
