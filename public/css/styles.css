@@ -14,17 +14,20 @@ START HEADER
     margin: 0 0 8px 8px;
     padding-top: 8px;
     float: left;
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
 }
 
 
-.nav-searchProducts{
+.nav-searchProducts {
     width: 100%;
     text-align-last: center;
     position: relative;
 }
 
 
-.nav-searchProducts-input{
+.nav-searchProducts-input {
     width: 70%;
     height: 50px;
     background: #2b303b;
@@ -37,19 +40,51 @@ START HEADER
     border-radius: 5px;
   }
 
-.nav-searchProducts-btn{
+  .nav-searchProducts-btn {
     position: absolute;
     font-size: 1em;
-    margin-left: 17px;
-    margin-top: 17px;
+    margin: 0 17px 0 0;
+    padding-left: 17px;
+    height:calc(100% - 3px);
     z-index: 1;
     color: #4f5b66;
     background: none;
     border: none;
+    width: 20px;
+}
+
+.nav-searchProducts-btn::after {
+    content: '';
+    padding: 7px 2px 7px 0;
+    margin-left: .8em;
+    z-index: 2;
+    background: #63717f;
+}
+
+.nav-searchProducts-btn:hover {
+    width: 53px;
+    font-size: 1.2em;
+    background: #63717f8c;
+    border-radius: 5px 0 0 5px;
+    transition: all .5s;
+    cursor: pointer;
+    color: #63717f;
+}
+
+.nav-searchProducts-btn:active {
+    animation-name: btn-searchProducts-active;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes btn-searchProducts-active {
+    from {border-radius: 5px;}
+    to {border-radius: 20px;}
 }
 
 .navbar {
-    width: 100%;
     background-color: #464b55;
     padding: 10px;
     display: flex;
