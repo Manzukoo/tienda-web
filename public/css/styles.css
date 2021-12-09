@@ -159,8 +159,13 @@ Cards Featured Products
     }
 
     .featured-product-card:hover {
-        height: 408px;
+        height: max-content;
         box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.144);
+    }
+
+    .featured-product-card:hover .featured-product-name{
+        opacity: 100;
+        transition: opacity .4s;
     }
 
     .card-header {
@@ -246,12 +251,12 @@ Cards Featured Products
     }
 
     @keyframes card-image-hover {
-        from{
+        from {
             width: 184px;
             height: 184px;
             margin: 20px;
         }
-        to{
+        to {
             height: 200px;
             width: 200px;
             margin: 12px;
@@ -259,21 +264,37 @@ Cards Featured Products
     }
     
 
-    .card-footer{
+    .card-footer {
         border-top: 2px solid #24242452;
         position: relative;
         min-height: 0;
         max-height: 184px;
         background-color: #fff;
         z-index: 200;
+        margin-left: 8.6px;
 
     }
 
-    .featured-product-price{
-        font-size: 1.4em;
-        margin: 8.6px;
-        font-family: 'Noto Sans';
+    .featured-product-amount {
+        font-size: 1.35em;
+        margin-bottom: -5px;
     }
+
+    .featured-product-shipping-free{
+        color: #00a650;
+        font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+
+    .featured-product-name {
+        opacity: 0;
+        max-height: 80px;
+        overflow: hidden;
+        margin: 4px 0 10px;
+    }
+
 
 /*
 END Cards Featured Products
