@@ -151,7 +151,6 @@ Cards Featured Products
     .featured-product-card {
         background-color: #fff;
         width: 224px;
-        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.144);
         height: 270px;
         max-height: 408px;
         overflow: hidden;
@@ -160,7 +159,7 @@ Cards Featured Products
 
     .featured-product-card:hover {
         height: max-content;
-        box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.144);
+        box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.144);
     }
 
     .featured-product-card:hover .featured-product-name{
