@@ -222,7 +222,6 @@ Cards Featured Products
         width: 224px;
         position: absolute;
         z-index: 100;
-        transition: background-color .4s;
     }
 
     .featured-product-card:hover .card-image-container-trigger {
