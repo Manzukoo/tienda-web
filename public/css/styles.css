@@ -151,7 +151,6 @@ Cards Featured Products
     .featured-product-card {
         background-color: #fff;
         width: 224px;
-        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.144);
         height: 270px;
         max-height: 408px;
         overflow: hidden;
@@ -159,8 +158,13 @@ Cards Featured Products
     }
 
     .featured-product-card:hover {
-        height: 408px;
-        box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.144);
+        height: max-content;
+        box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.144);
+    }
+
+    .featured-product-card:hover .featured-product-name{
+        opacity: 100;
+        transition: opacity .4s;
     }
 
     .card-header {
@@ -218,12 +222,10 @@ Cards Featured Products
         width: 224px;
         position: absolute;
         z-index: 100;
-        transition: background-color .4s;
     }
 
-    .card-image-container-trigger:hover {
+    .featured-product-card:hover .card-image-container-trigger {
         background-color: #dadada;
-        transition: background-color .4s;
     }
 
     .card-image-container-trigger:hover .card-icon-fav, .featured-product-card:hover .card-icon-fav{
@@ -246,12 +248,12 @@ Cards Featured Products
     }
 
     @keyframes card-image-hover {
-        from{
+        from {
             width: 184px;
             height: 184px;
             margin: 20px;
         }
-        to{
+        to {
             height: 200px;
             width: 200px;
             margin: 12px;
@@ -259,21 +261,37 @@ Cards Featured Products
     }
     
 
-    .card-footer{
+    .card-footer {
         border-top: 2px solid #24242452;
         position: relative;
         min-height: 0;
         max-height: 184px;
         background-color: #fff;
         z-index: 200;
+        margin-left: 8.6px;
 
     }
 
-    .featured-product-price{
-        font-size: 1.4em;
-        margin: 8.6px;
-        font-family: 'Noto Sans';
+    .featured-product-amount {
+        font-size: 1.35em;
+        margin-bottom: -5px;
     }
+
+    .featured-product-shipping-free{
+        color: #00a650;
+        font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+
+    .featured-product-name {
+        opacity: 0;
+        max-height: 80px;
+        overflow: hidden;
+        margin: 4px 0 10px;
+    }
+
 
 /*
 END Cards Featured Products
