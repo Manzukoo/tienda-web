@@ -226,9 +226,8 @@ Cards Featured Products
         transition: background-color .4s;
     }
 
-    .card-image-container-trigger:hover {
+    .featured-product-card:hover .card-image-container-trigger {
         background-color: #dadada;
-        transition: background-color .4s;
     }
 
     .card-image-container-trigger:hover .card-icon-fav, .featured-product-card:hover .card-icon-fav{
