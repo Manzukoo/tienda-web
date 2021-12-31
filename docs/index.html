@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    
+
+
+
+
+    <!--
+    ..######...######...######.
+    .##....##.##....##.##....##
+    .##.......##.......##......
+    .##........######...######.
+    .##.............##.......##
+    .##....##.##....##.##....##
+    ..######...######...######.
+    -->
+    <link rel="stylesheet" href="../public/css/styles.css">
+
+
+
+    <!--
+    .########..#######..##....##.########.......###....##......##.########..######...#######..##.....##.########
+    .##.......##.....##.###...##....##.........##.##...##..##..##.##.......##....##.##.....##.###...###.##......
+    .##.......##.....##.####..##....##........##...##..##..##..##.##.......##.......##.....##.####.####.##......
+    .######...##.....##.##.##.##....##.......##.....##.##..##..##.######....######..##.....##.##.###.##.######..
+    .##.......##.....##.##..####....##.......#########.##..##..##.##.............##.##.....##.##.....##.##......
+    .##.......##.....##.##...###....##.......##.....##.##..##..##.##.......##....##.##.....##.##.....##.##......
+    .##........#######..##....##....##.......##.....##..###..###..########..######...#######..##.....##.########
+    -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+
+    <!--
+    ..######....#######...#######...######...##.......########....########..#######..##....##.########..######.
+    .##....##..##.....##.##.....##.##....##..##.......##..........##.......##.....##.###...##....##....##....##
+    .##........##.....##.##.....##.##........##.......##..........##.......##.....##.####..##....##....##......
+    .##...####.##.....##.##.....##.##...####.##.......######......######...##.....##.##.##.##....##.....######.
+    .##....##..##.....##.##.....##.##....##..##.......##..........##.......##.....##.##..####....##..........##
+    .##....##..##.....##.##.....##.##....##..##.......##..........##.......##.....##.##...###....##....##....##
+    ..######....#######...#######...######...########.########....##........#######..##....##....##.....######.
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+
+
+    
+    <!--
+    .......##....###....##.....##....###.....######...######..########..####.########..########
+    .......##...##.##...##.....##...##.##...##....##.##....##.##.....##..##..##.....##....##...
+    .......##..##...##..##.....##..##...##..##.......##.......##.....##..##..##.....##....##...
+    .......##.##.....##.##.....##.##.....##..######..##.......########...##..########.....##...
+    .##....##.#########..##...##..#########.......##.##.......##...##....##..##...........##...
+    .##....##.##.....##...##.##...##.....##.##....##.##....##.##....##...##..##...........##...
+    ..######..##.....##....###....##.....##..######...######..##.....##.####.##...........##...
+    -->
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="nav-title">Tienda</a>
+                <div class="nav-searchProducts">
+                    <form role="search">
+                        <button id="search" type="submit" class="nav-searchProducts-btn"><i class="fas fa-search"></i></button>
+                        <input class="nav-searchProducts-input" type="search" id="searchProducts" placeholder="Buscar productos" aria-label="Buscar productos en la Tienda" name="searched_products">
+                    </form>
+                </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <p class="title">Los productos mas destacados del momento</p>
+
+            <div class="featured-products">
+                <div class="featured-product-card">
+                    <div class="card-header">
+                        <div class="card-image-container-trigger">
+                            <div class="card-icon-fav">
+                                <i class="icon far fa-heart"></i>
+                            </div>
+                            <div class="card-image-container">
+                                <a href="#product_img">
+                                    <img class="card-image" src="../public/img/product0.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="featured-product-info">
+                            <div class="featured-product-amount">
+                                <span class="featured-product-price-symbol">$</span>
+                                <span class="featured-product-price">12.000</span>
+                            </div>
+                            <p class="featured-product-shipping-free">Envio gratis.</p>
+                        </div>
+                        <p class="featured-product-name">Memoria Corsair Veng Rgb Pro 16gb Ddr4 3200mhz Negro 2x8gb</p>
+                    </div>
+                </div>
+                
+                <div class="featured-product-card">
+                    <div class="card-header">
+                        <div class="card-image-container-trigger">
+                            <div class="card-icon-fav">
+                                <i class="icon far fa-heart"></i>
+                            </div>
+                            <div class="card-image-container">
+                                <a href="#product_img">
+                                    <img class="card-image" src="../public/img/product1.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="featured-product-info">
+                            <div class="featured-product-amount">
+                                <span class="featured-product-price-symbol">$</span>
+                                <span class="featured-product-price">4.725</span>
+                            </div>
+                            <p class="featured-product-shipping-free"></p>
+                        </div>
+                        <p class="featured-product-name">UNIDAD DE ESTADO SOLIDO INTERNO M2 120GB KINGSTON A400</p>
+                    </div>
+                </div>
+
+                <div class="featured-product-card">
+                    <div class="card-header">
+                        <div class="card-image-container-trigger">
+                            <div class="card-icon-fav">
+                                <i class="icon far fa-heart"></i>
+                            </div>
+                            <div class="card-image-container">
+
+                                <a href="#product_img">
+                                    <img class="card-image" src="../public/img/product2.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="featured-product-info">
+                            <div class="featured-product-amount">
+                                <span class="featured-product-price-symbol">$</span>
+                                <span class="featured-product-price">7.749</span>
+                            </div>
+                            <p class="featured-product-shipping-free"></p>
+                        </div>
+                        <p class="featured-product-name">Redragon ZEUS 2 H510W Auriculares</p>
+                    </div>
+                </div>
+
+                <div class="featured-product-card">
+                    <div class="card-header">
+                        <div class="card-image-container-trigger">
+                            <div class="card-icon-fav">
+                                <i class="icon far fa-heart"></i>
+                            </div>
+                            <div class="card-image-container">
+
+                                <a href="#product_img">
+                                    <img class="card-image" src="../public/img/product3.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="featured-product-info">
+                            <div class="featured-product-amount">
+                                <span class="featured-product-price-symbol">$</span>
+                                <span class="featured-product-price">6.829</span>
+                            </div>
+                            <p class="featured-product-shipping-free">Envío gratis.</p>
+                        </div>
+                        <p class="featured-product-name">Disco duro interno Western Digital WD20EZAZ 2TB azul</p>
+                    </div>
+                </div>
+
+                <div class="featured-product-card">
+                    <div class="card-header">
+                        <div class="card-image-container-trigger">
+                            <div class="card-icon-fav">
+                                <i class="icon far fa-heart"></i>
+                            </div>
+                            <div class="card-image-container">
+
+                                <a href="#product_img">
+                                    <img class="card-image" src="../public/img/product4.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="featured-product-info">
+                            <div class="featured-product-amount">
+                                <span class="featured-product-price-symbol">$</span>
+                                <span class="featured-product-price">12.999</span>
+                            </div>
+                            <p class="featured-product-shipping-free">Envio gratis.</p>
+                        </div>
+                        <p class="featured-product-name">Memoria Ram Vengeance Lpx Gamer 2x8gb Corsair</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
